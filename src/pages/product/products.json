@@ -1,0 +1,225 @@
+[
+  {
+    "id": 1,
+    "name": "Stylish Backpack",
+    "price": 85.0,
+    "originalPrice": 100.0,
+    "rating": 4.5,
+    "ratingCount": 60,
+    "ImageSrc": "../../img/no_img.png",
+    "category": "Bags",
+    "sizes": "One size",
+    "color": "one color",
+    "Description": "Designed for both style and functionality, this backpack is perfect for daily commuters or weekend adventurers alike. Featuring multiple compartments to keep your essentials organized and a padded laptop sleeve for tech safety, its sleek black design complements any outfit. Durable, water-resistant materials ensure your belongings are secure in any weather"
+  },
+  {
+    "id": 2,
+    "name": "Comfortable Ankle Socks",
+    "price": 500.0,
+    "originalPrice": 700.0,
+    "rating": 4.0,
+    "ratingCount": 40,
+    "ImageSrc": "",
+    "category": "Socks",
+    "color": ["Silver", "Green"],
+    "sizes": ["S", "M", "L", "XL"],
+    "Description": "Experience unparalleled comfort with our ankle socks, crafted from soft, breathable fabric that keeps your feet cozy all day long. Perfect for sports, casual wear, or lounging at home. Despite their snug fit, these socks maintain their shape and softness wash after wash. Note: While our socks are designed for durability, avoid bleaching to maintain color vibrancy.",
+    "reviews": [
+      {
+        "reviewerName": "John Doe",
+        "reviewText": "Very comfortable and durable socks. Highly recommend.",
+        "reviewRating": 4
+      },
+      {
+        "reviewerName": "Jane Smith",
+        "reviewText": "Good value for money, but the color fades after a few washes.",
+        "reviewRating": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Casual T-Shirt",
+    "price": 35.0,
+    "originalPrice": 45.0,
+    "rating": 4.3,
+    "ratingCount": 75,
+    "ImageSrc": "",
+    "category": "Cloths",
+    "color": "Blue",
+    "Description": "This casual T-shirt combines comfort and style, making it an essential wardrobe staple. Made from high-quality, soft cotton fabric, it offers a relaxed fit that's perfect for everyday wear. The vibrant blue shade adds a pop of color to your outfit, making it versatile enough to pair with jeans, shorts, or casual trousers. Pre-shrunk and fade-resistant, this T-shirt keeps looking great wash after wash",
+    "reviews": [
+      {
+        "reviewerName": "Alex Johnson",
+        "reviewText": "Great fit and doesn't shrink in the wash. My new favorite t-shirt!",
+        "reviewRating": 5
+      },
+      {
+        "reviewerName": "Sam Lee",
+        "reviewText": "Comfortable material and the blue color is very vibrant.",
+        "reviewRating": 4
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Running Shoes",
+    "price": 550.0,
+    "originalPrice": 600.0,
+    "rating": 4.8,
+    "ratingCount": 90,
+    "ImageSrc": "",
+    "category": "Shoes",
+    "Description": "Hit the ground running with our latest running shoes, designed for both the amateur jogger and the serious marathon runner. Featuring advanced cushioning technology for optimal support and breathability, these shoes ensure comfort over long distances. The sleek blue design is both stylish and functional, with reflective elements for safe nighttime running. Durable and lightweight, they’re your perfect partner on the road to fitness.",
+    "color": "Blue"
+  },
+  {
+    "id": 5,
+    "name": "Leather Belt",
+    "price": 45.0,
+    "originalPrice": 60.0,
+    "rating": 4.2,
+    "ratingCount": 55,
+    "ImageSrc": "",
+    "category": "Cloths",
+    "Description": "Crafted from premium quality leather, this belt combines classic style with rugged durability. Available in versatile Silver and Moss Green, it's the perfect accessory to elevate any outfit. The belt comes in sizes S to XL, ensuring a perfect fit for everyone. Whether you're dressing up for the office or pairing it with casual wear, this leather belt adds a touch of elegance and sophistication to your look",
+    "color": ["Silver", "Moss Green"],
+    "sizes": ["S", "M", "L", "XL"]
+  },
+  {
+    "id": 6,
+    "name": "Elegant Wristwatch",
+    "price": 250.0,
+    "originalPrice": 300.0,
+    "rating": 4.7,
+    "ratingCount": 85,
+    "ImageSrc": "",
+    "category": "Cloths",
+    "color": "Silver",
+    "sizes": ""
+  },
+  {
+    "id": 7,
+    "name": "Classic Fedora Hat",
+    "price": 55.0,
+    "originalPrice": 80.0,
+    "rating": 4.4,
+    "ratingCount": 30,
+    "ImageSrc": "",
+    "category": "Cloths",
+    "color": "Brown",
+    "sizes": ["S", "M", "L"]
+  },
+  {
+    "id": 8,
+    "name": "Sports Water Bottle",
+    "price": 20.0,
+    "originalPrice": 25.0,
+    "rating": 4.6,
+    "ratingCount": 50,
+    "ImageSrc": "",
+    "category": "Sports",
+    "color": "Blue"
+  },
+  {
+    "id": 9,
+    "name": "Gym Workout Gloves",
+    "price": 30.0,
+    "originalPrice": 45.0,
+    "rating": 4.8,
+    "ratingCount": 65,
+    "ImageSrc": "",
+    "category": "Sports",
+    "color": "Black"
+  },
+  {
+    "id": 10,
+    "name": "High-Quality Earphones",
+    "price": 75.0,
+    "originalPrice": 90.0,
+    "rating": 4.5,
+    "ratingCount": 120,
+    "ImageSrc": "",
+    "category": "Accesories",
+    "color": "White"
+  },
+  {
+    "id": 11,
+    "name": "Smart Fitness Band",
+    "price": 199.0,
+    "originalPrice": 249.0,
+    "rating": 4.6,
+    "ratingCount": 110,
+    "ImageSrc": "",
+    "category": "Wallet",
+    "color": "Black"
+  },
+  {
+    "id": 12,
+    "name": "Eco-Friendly Yoga Mat",
+    "price": 60.0,
+    "originalPrice": 75.0,
+    "rating": 4.9,
+    "ratingCount": 95,
+    "ImageSrc": "",
+    "category": "Sports",
+    "color": "Green"
+  },
+  {
+    "id": 13,
+    "name": "Professional Camera",
+    "price": 1200.0,
+    "originalPrice": 1500.0,
+    "rating": 4.8,
+    "ratingCount": 78,
+    "ImageSrc": "",
+    "category": "Wallet",
+    "color": "Black"
+  },
+  {
+    "id": 14,
+    "name": "Compact Power Bank",
+    "price": 2005.0,
+    "originalPrice": 4000.0,
+    "rating": 4.4,
+    "ratingCount": 150,
+    "ImageSrc": "",
+    "category": "Wallet",
+    "color": "White"
+  },
+  {
+    "id": 15,
+    "name": "Bluetooth Speaker",
+    "price": 920.0,
+    "originalPrice": 1150.0,
+    "rating": 4.7,
+    "ratingCount": 200,
+    "ImageSrc": "",
+    "category": "Wallet",
+    "color": "Blue"
+  },
+  {
+    "id": 16,
+    "name": "Classic Cotton T-Shirt",
+    "price": 1500.0,
+    "originalPrice": 3000.0,
+    "rating": 4.5,
+    "ratingCount": 75,
+    "ImageSrc": "",
+    "category": "Cloths",
+    "color": "Black",
+    "size": "M"
+  },
+  {
+    "id": 17,
+    "name": "Lightweight Jacket",
+    "price": 755.0,
+    "originalPrice": 800.0,
+    "rating": 4.8,
+    "ratingCount": 90,
+    "ImageSrc": "",
+    "category": "Cloths",
+    "color": "Grey",
+    "size": "L"
+  }
+]

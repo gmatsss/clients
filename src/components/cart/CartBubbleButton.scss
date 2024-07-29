@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.cart-bubble-button {
+  position: fixed;
+    bottom: 20px; // Adjust according to your needs
+    right: 20px; // Adjust according to your needs
+    background-color: #f04; // Your desired background color
+    color: white; // Text color
+    border: none;
+    border-radius: 50%;
+    width: 60px; // Adjust size as needed
+    height: 60px; // Adjust size as needed
+    font-size: 24px; // Adjust as needed
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); // Optional: Adds a shadow effect
+    z-index: 1000; // Ensure it's above other elements
+    outline: none;
+    
+    &:hover {
+      background-color: darken(#f04, 10%); // Slightly darker on hover
+    }
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -10px; // Adjust to position the badge slightly higher
+    right: -10px; // Adjust to position the badge slightly to the right
+    background-color: #ff0000; // Bright, attention-grabbing color
+    color: white;
+    font-size: 14px; // Slightly larger text
+    height: 25px; // Increased size for better visibility
+    width: 25px; // Match the height for a perfect circle
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white; // Make the border thicker to enhance the badge's appearance
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); // Subtle shadow for depth
+
+  }
+
+  
+  .cart-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px; /* Increased width for more space */
+    max-height: 60vh; /* Limit the height and make it responsive */
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* More pronounced shadow for depth */
+    border-radius: 12px; /* Softer edges */
+    padding: 20px;
+    z-index: 999;
+    overflow-y: auto; /* Allows scrolling within the container */
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out, width 0.3s ease;
+  }
+  
+  .cart-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between items without using margins */
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for each item */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for each item */
+    transition: background-color 0.2s; /* Smooth background color transition on hover */
+  }
+  
+  .cart-item:hover {
+    background-color: #eaeaea; /* Slightly darker background on hover */
+  }
+  
+  .cart-item-image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 100px; /* Larger image */
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 8px; /* Rounded corners for images */
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+    display: flex;
+    flex-direction: column; /* Stack details vertically */
+    align-items: start; /* Aligns details to the start */
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .cart-item-name {
+    font-size: 16px; /* Larger font size for readability */
+    font-weight: 500; /* Medium font weight */
+    color: #333; /* Darker text for contrast */
+  }
+  
+  .cart-item-price,
+  .cart-item-quantity {
+    font-size: 14px;
+    color: #666; /* Lighter text for less emphasis */
+  }
+  
+  .remove-item-button {
+    align-self: center; /* Aligns button vertically within `.cart-item` */
+    margin-left: auto; /* Pushes the button to the right */
+    background-color: #db4040; /* Slightly different shade of red */
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Larger padding for a better click area */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s; /* Smooth transition for the button */
+  }
+  
+  .remove-item-button:hover {
+    background-color: #c12f2f; /* Darker shade on hover for interaction feedback */
+  }
+  
+  .change-quantity-button {
+    margin-right: 10px; /* Ensure spacing between this and the remove button */
+    background-color: #f0ad4e; /* Example: orange background for visibility */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .checkout-button {
+    width: 100%; // Make the button span the full width of the cart container
+    padding: 15px 0; // Adequate padding for better clickability
+    background-color: #4CAF50; // Green color for checkout to indicate action
+    color: white;
+    border: none;
+    border-radius: 8px; // Match the border radius with cart items
+    cursor: pointer;
+    margin-top: 20px; // Ensure some space between the last cart item and the checkout button
+    font-size: 18px; // Increase font size for visibility
+    transition: background-color 0.3s; // Smooth transition for hover effect
+    
+    &:hover {
+      background-color: darken(#4CAF50, 10%); // Darken on hover for visual feedback
+    }
+  }

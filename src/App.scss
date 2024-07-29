@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.mystyle-header {
+  background-color: #ffffff; // A clean, modern background
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  z-index: 1000; // Ensure the header stays on top
+}
+
+.mystyle-navbar {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    .mystyle-logo {
+      transition: transform 0.3s ease; // Smooth logo scale on hover
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.mystyle-navbar-toggler {
+  border: none;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml, ..."); // Consider using a custom SVG for the toggler icon
+  }
+}
+
+.mystyle-navbar-collapse {
+  justify-content: center;
+  @media (max-width: 992px) {
+    background-color: #f8f9fa; // Light background for mobile menu
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.mystyle-navbar-nav {
+  font-family: 'Roboto', sans-serif; // Change the font family for the navbar text
+
+  .mystyle-nav-item {
+    margin: 0 20px; // Increase space for a more open layout
+
+    .mystyle-nav-link {
+      color: #343a40; // Darker color for modern contrast
+      font-weight: 500; // Medium font weight for readability
+      transition: color 0.3s ease; // Smooth transition for hover effect
+
+      &:hover {
+        color: #007bff; // Bright color for hover
+        text-decoration: none; // Remove underline on hover
+      }
+    }
+  }
+}
+
+.mystyle-logo {
+  width: 150px; // Logo width
+  height: auto; // Maintain aspect ratio
+}
