@@ -1,9 +1,11 @@
 import React from "react";
+import { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/Header.tsx";
@@ -15,11 +17,16 @@ import Footer from "./pages/home/components/footer.jsx";
 import Checkout from "./pages/checkout/checkout.tsx";
 import Blog from "./pages/blog/blog.tsx";
 import About from "./pages/about/about.tsx";
+import Admin from "./pages/admin/admin.tsx";
+import Login from './pages/admin/login.tsx';
+
 
 const App: React.FC = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const HideCartButtonOnRoutes = () => {
     const location = useLocation();
     const shouldHideCartButton = location.pathname === "/checkout";
+    
 
     return <>{!shouldHideCartButton && <CartBubbleButton />}</>;
   };
@@ -33,6 +40,13 @@ const App: React.FC = () => {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
+        <Route
+          path="/admin"
+          element={
+            isAuthenticated ? <Admin /> : <Navigate to="/login" />
+          }
+        />
+        <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
       </Routes>
       <HideCartButtonOnRoutes />
       <Footer />
